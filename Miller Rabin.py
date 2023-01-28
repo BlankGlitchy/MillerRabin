@@ -2,8 +2,8 @@ import random
 
 
 def pow(x, y, p):
-    res = 1;
-    x = x % p;
+    res = 1
+    x = x % p
 
     while y > 0:
         if y & 1:
@@ -25,7 +25,7 @@ def miller_rabin_test(d, n):
             return False
         if x == n - 1:
             return True
-    return False;
+    return False
 
 
 def isPrime(n, k):
@@ -43,8 +43,9 @@ def isPrime(n, k):
 
     return True
 
+
 # Driver Code
-#k is the number of rounds of tests the code should perform#
+# k is the number of rounds of tests the code should perform#
 # the for loop checks for primes between 1500 and 35000, they can be changed#
 k = 3
 number_primes = 0
